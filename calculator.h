@@ -33,7 +33,7 @@ private:
     void updateHistory(const QString &text);
 
     QLineEdit *display;
-    QLabel *historyDisplay; // 新增：历史记录标签
+    QLabel *historyDisplay;
 
     double  m_storedOperand   = 0.0;
     QString m_pendingOperator;
@@ -42,4 +42,4 @@ private:
     bool    m_hasError          = false;
 };
 
-#endif // CALCULATOR_H
+#endif

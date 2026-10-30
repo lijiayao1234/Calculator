@@ -12,7 +12,7 @@ Calculator::Calculator(QWidget *parent)
     this->setWindowTitle("Calculator");
     this->setStyleSheet("QWidget { background-color: #FAFAFA; }");
 
-    // ================= 1. 顶部白色显示区 =================
+    // =================顶部白色显示区 =================
     QWidget *displayArea = new QWidget(this);
     displayArea->setStyleSheet("background-color: #FFFFFF; border-bottom: 1px solid #E0E0E0;");
 
@@ -36,7 +36,7 @@ Calculator::Calculator(QWidget *parent)
     displayLayout->addWidget(historyDisplay);
     displayLayout->addWidget(display);
 
-    // ================= 2. 底部按键区 =================
+    // =================底部按键区 =================
     QGridLayout *grid = new QGridLayout();
     grid->setSpacing(8);
     grid->setContentsMargins(10, 15, 10, 10);
