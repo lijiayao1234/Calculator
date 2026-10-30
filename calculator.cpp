@@ -126,13 +126,13 @@ void Calculator::processInput(const QString &token)
     } else if (token == "±") {
         // 正负号处理逻辑
         QString cur = display->text();
-        if (cur == "0" || cur == "0.") return; // 0 不需要翻转
+        if (cur == "0" || cur == "0.") return;
         if (cur.startsWith("-")) {
-            display->setText(cur.mid(1)); // 去掉负号
+            display->setText(cur.mid(1));
         } else {
-            display->setText("-" + cur);  // 加上负号
+            display->setText("-" + cur);
         }
-        m_waitingForOperand = false; // 翻转后视为正在输入
+        m_waitingForOperand = false;
     } else if (token == "=") {
         onEqual();
     } else if (token == "BACK") {
